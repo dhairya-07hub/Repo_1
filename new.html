@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FasTech Computer Academy</title>
+  <style>
+    body {
+      background: #f4f4f6;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #141414;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 40px 0 40px;
+      background: #f4f4f6;
+    }
+    .logo-section {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      width: 48px;
+      margin-right: 16px;
+    }
+    .tagline {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    nav {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+    nav a {
+      color: #222;
+      text-decoration: none;
+      font-size: 15px;
+      padding: 2px 0;
+    }
+    .signup-btn {
+      border: 1px solid #2066ce;
+      background: transparent;
+      color: #2066ce;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .signup-btn:hover {
+      background: #2066ce;
+      color: #fff;
+    }
+    .container {
+      display: flex;
+      align-items: flex-start;
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .main-content {
+      flex: 1;
+    }
+    h1 {
+      font-size: 44px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      letter-spacing: -2px;
+    }
+    h2 {
+      font-size: 44px;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 20px;
+      letter-spacing: -2px;
+    }
+    .description {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 32px;
+      max-width: 500px;
+    }
+    .register-box {
+      background: #144893;
+      padding: 32px 28px;
+      border-radius: 4px;
+      max-width: 330px;
+      margin-top: 30px;
+    }
+    .register-box label {
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: block;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+    .register-box input[type="email"] {
+      width: 100%;
+      padding: 10px 8px;
+      border: none;
+      margin: 20px 0 12px 0;
+      border-radius: 2px;
+      font-size: 15px;
+    }
+    .register-box button {
+      width: 100%;
+      background: #fff;
+      color: #144893;
+      border: none;
+      font-weight: bold;
+      font-size: 15px;
+      padding: 10px 0;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .register-box button:hover {
+      background: #e8eaf1;
+    }
+    .hero-image-section {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .image-bg {
+      width: 340px;
+      height: 340px;
+      background: #1c6ae7;
+      border-radius: 50%;
+      position: absolute;
+      left: 80px;
+      top: 55px;
+      z-index: 0;
+    }
+    .hero-image {
+      width: 260px;
+      position: relative;
+      z-index: 1;
+      border-radius: 7px;
+      box-shadow: 0 4px 12px rgba(44,76,118,0.16);
+    }
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        padding: 16px;
+      }
+      .hero-image-section {
+        margin-top: 36px;
+        justify-content: flex-start;
+      }
+      .image-bg {
+        left: 0;
+        top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-section">
+    <img src="https://i.ibb.co/0jG7bCT/fastech-logo.png" class="logo" alt="FasTech Logo">
+    <span class="tagline">FAST-TRACK YOUR FUTURE IN TECH!</span>
+  </div>
+  <nav>
+    <a href="#">About us</a>
+    <a href="#">Cources</a>
+    <a href="#">Contact us</a>
+    <a href="#">Community</a>
+    <a href="#">study material</a>
+    <a href="#" class="signup-btn">SIGN UP</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="main-content">
+    <h1>FASTECH</h1>
+    <h2>COMPUTER ACADEMY</h2>
+    <div class="description">
+      FasTech Computer Academy offers hands-on, industry-relevant computer training for beginners and professionals.
+      With expert guidance and a future-focused approach, students gain the skills needed to thrive in today’s tech-driven world—fast-tracking their careers toward success.
+    </div>
+    <form class="register-box">
+      <label for="email">REGISTER</label>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      <button type="submit">NEXT</button>
+    </form>
+  </div>
+  <div class="hero-image-section">
+    <div class="image-bg"></div>
+    <img src="https://i.ibb.co/jgPw5Qd/businessman.png" class="hero-image" alt="Businessman">
+    <!-- Replace the above src with your image file as needed -->
+  </div>
+</div>
+
+</body>
+</html>
