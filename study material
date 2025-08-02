@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fastech Computer Academy - Study Materials</title>
+  
+  <style>
+    /* Reset and Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    /* Header */
+    header {
+      background: #0d355e;
+      color: #fff;
+      padding: 20px 0;
+    }
+    header .container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .logo {
+      height: 50px;
+    }
+
+    /* Layout */
+    .main-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      flex: 1;
+      min-width: 200px;
+      margin-right: 20px;
+    }
+    .sidebar h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    .sidebar ul {
+      list-style: none;
+    }
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Content */
+    .content {
+      flex: 3;
+      min-width: 300px;
+    }
+    .content section {
+      margin-bottom: 40px;
+    }
+    .content h2 {
+      color: #0d355e;
+      margin-bottom: 10px;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      border-left: 5px solid #0d355e;
+      overflow-x: auto;
+    }
+
+    /* Footer */
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="assets/logo.png" alt="Fastech Logo" class="logo"/>
+      <h1>Fastech Computer Academy</h1>
+    </div>
+  </header>
+
+  <div class="main-wrapper">
+    <aside class="sidebar">
+      <h2>Courses</h2>
+      <ul>
+        <li><a href="#html">HTML Basics</a></li>
+        <li><a href="#css">CSS Fundamentals</a></li>
+        <li><a href="#js">JavaScript Essentials</a></li>
+        <li><a href="#python">Python Programming</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <section id="html">
+        <h2>HTML Basics</h2>
+        <p>HTML (HyperText Markup Language) is the standard language for creating webpages.</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;My Page&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;Hello, World!&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+      </section>
+
+      <section id="css">
+        <h2>CSS Fundamentals</h2>
+        <p>CSS controls the style and layout of web documents.</p>
+        <pre><code>body {
+  font-family: Arial;
+  background-color: #f0f0f0;
+}</code></pre>
+      </section>
+
+      <section id="js">
+        <h2>JavaScript Essentials</h2>
+        <p>JavaScript is used to make websites interactive.</p>
+        <pre><code>document.getElementById("demo").innerHTML = "Hello JS!";</code></pre>
+      </section>
+
+      <section id="python">
+        <h2>Python Programming</h2>
+        <p>Python is a powerful, easy-to-learn programming language.</p>
+        <pre><code>name = input("Enter your name: ")
+print("Hello", name)</code></pre>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Fastech Computer Academy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
